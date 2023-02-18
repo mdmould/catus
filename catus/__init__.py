@@ -4,11 +4,11 @@ import matplotlib.pyplot as plt
 plt.rcParams.update({
     'text.usetex': True,
     'font.family': 'serif',
-    'font.size': 10,
+    'font.size': 12,
     'figure.figsize': (5, 5),
     'figure.titlesize': 'large',
     'axes.titlesize': 'large',
-    'axes.labelsize': 'medium',
+    'axes.labelsize': 'large',
     'xtick.top': True,
     'xtick.major.size': 5,
     'xtick.minor.size': 3,

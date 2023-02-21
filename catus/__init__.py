@@ -25,6 +25,8 @@ plt.rcParams.update({
     'legend.framealpha': 1,
     'legend.fontsize': 'medium',
     'lines.linewidth': 2,
+    'patch.linewidth': 2,
+    'hatch.linewidth': 2,
     })
 
 cmap = plt.get_cmap('tab10')

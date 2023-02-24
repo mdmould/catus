@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 
 
-plt.rcParams.update({
+default_rcParams = {
     'text.usetex': True,
     'font.family': 'serif',
     'font.size': 12,
@@ -10,14 +10,14 @@ plt.rcParams.update({
     'axes.titlesize': 'large',
     'axes.labelsize': 'large',
     'xtick.top': True,
-    'xtick.major.size': 5,
-    'xtick.minor.size': 3,
+    'xtick.major.size': 4,
+    'xtick.minor.size': 2,
     'xtick.minor.visible': True,
     'xtick.direction': 'out',
     'xtick.labelsize': 'medium',
     'ytick.right': True,
-    'ytick.major.size': 5,
-    'ytick.minor.size': 3,
+    'ytick.major.size': 4,
+    'ytick.minor.size': 2,
     'ytick.minor.visible': True,
     'ytick.direction': 'out',
     'ytick.labelsize': 'medium',
@@ -27,7 +27,35 @@ plt.rcParams.update({
     'lines.linewidth': 2,
     'patch.linewidth': 2,
     'hatch.linewidth': 2,
-    })
+    }
+
+plt.rcParams.update(default_rcParams)
+
 
 cmap = plt.get_cmap('tab10')
+
+
+class Corner:
+
+    def __init__(self, kde=False, bounds=None, reflect=None, smooth1d=None, smooth2d=None):
+
+        pass
+
+    def plot1d(self):
+
+        pass
+
+    def plot2d(self):
+
+        pass
+
+    def plot(self):
+
+        pass
+
+
+
+def corner(*args, **kwargs):
+
+    return Corner(*args, **kwargs).plot()
 

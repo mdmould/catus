@@ -41,15 +41,15 @@ class Corner:
 
         pass
 
+    def plot(self):
+
+        pass
+
     def plot1d(self):
 
         pass
 
     def plot2d(self):
-
-        pass
-
-    def plot(self):
 
         pass
 

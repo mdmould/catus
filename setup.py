@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 name = 'catus'
-version = '0.0.4'
+version = '0.0.5'
 
 with open('README.md' ,'r') as f:
     long_description = f.read().strip()
@@ -17,6 +17,10 @@ setup(
     author_email='mattdmould@gmail.com',
     license='MIT',
     packages=find_packages(),
-    install_requires=['matplotlib'],
+    install_requires=[
+        'numpy',
+        'matplotlib',
+        'kaydee',
+        ],
     python_requires='>=3.7',
     )

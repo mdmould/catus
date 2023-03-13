@@ -35,7 +35,7 @@ plt.rcParams.update(default_rcParams)
 cmap = plt.get_cmap('tab10')
 
 
-class Corner:
+class _Corner:
 
     def __init__(self, kde=False, bounds=None, reflect=None, smooth1d=None, smooth2d=None):
 
@@ -55,7 +55,7 @@ class Corner:
 
 
 
-def corner(*args, **kwargs):
+def _corner(*args, **kwargs):
 
     return Corner(*args, **kwargs).plot()
 

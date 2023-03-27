@@ -35,6 +35,14 @@ plt.rcParams.update(default_rcParams)
 cmap = plt.get_cmap('tab10')
 
 
+def savefig(fig, file):
+
+    if file[-4:] != '.pdf':
+        file += '.pdf'
+
+    return fig.savefig(file, bbox_inches='tight')
+
+
 class _Corner:
 
     def __init__(self, kde=False, bounds=None, reflect=None, smooth1d=None, smooth2d=None):

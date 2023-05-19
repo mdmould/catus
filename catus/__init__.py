@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 
 default_rcParams = {
     'text.usetex': True,
-    'text.latex.preamble': [r'\usepackage{amsmath}'],
     'font.family': 'serif',
     'font.size': 12,
     'figure.figsize': (5, 5),

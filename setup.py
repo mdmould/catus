@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 name = 'catus'
-version = '0.0.6'
+version = '0.1'
 
 with open('README.md' ,'r') as f:
     long_description = f.read().strip()
